@@ -35,35 +35,49 @@ local function create(zone, options)
   --create array containing all map info per map size
   local map = {North={},South={},West={},East={},wx={},wy={},zx={},zy={}}
 		
-  -- coordinates for the small map.
-  map.North.small = 52.559801
-  map.South.small = 52.554921
-  map.West.small = 5.867646
-  map.East.small = 5.879677
-  map.wx.small = 320
-  map.wy.small = 0
-  map.zx.small = 479
-  map.zy.small = 210
+-- coordinates for the extra small map.
+map.North.xsmall = 52.230217
+map.South.xsmall = 52.229323
+map.West.xsmall = 21.010493
+map.East.xsmall = 21.013067
+-- No Fly Zone screen coordinates for extra small map--
+map.poly.xsmall = {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}}
 
-  -- coordinates for the medium map.
-  map.North.medium = 52.561551
-  map.South.medium = 52.554211
-  map.West.medium = 5.864698
-  map.East.medium = 5.882574
-  map.wx.medium = 246
-  map.wy.medium = 0
-  map.zx.medium = 443
-  map.zy.medium = 271
 
-  --coordinates for the largest map. 
-  map.North.large = 52.564116
-  map.South.large = 52.553043
-  map.West.large = 5.859864
-  map.East.large = 5.887011
-  map.wx.large = 197
-  map.wy.large = 0
-  map.zx.large = 410
-  map.zy.large = 271
+-- coordinates for the small map.
+map.North.small = 52.230664
+map.South.small = 52.228876
+map.West.small = 21.009205
+map.East.small = 21.014355
+-- No Fly Zone screen coordinates for small map--
+map.poly.small = {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}}
+
+
+-- coordinates for the medium map.
+map.North.medium = 52.231557
+map.South.medium = 52.227983
+map.West.medium = 21.00663
+map.East.medium = 21.01693
+-- No Fly Zone screen coordinates for medium map--
+map.poly.medium = {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}}
+
+
+-- coordinates for the large map.
+map.North.large = 52.233345
+map.South.large = 52.226195
+map.West.large = 21.00148
+map.East.large = 21.02208
+-- No Fly Zone screen coordinates for large map--
+map.poly.large = {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}}
+
+
+-- coordinates for the extra large map.
+map.North.xlarge = 52.23692
+map.South.xlarge = 52.22262
+map.West.xlarge = 20.991181
+map.East.xlarge = 21.032379
+-- No Fly Zone screen coordinates for extra large map--
+map.poly.xlarge = {{0,0}, {0,0}, {0,0}, {0,0}, {0,0}}
 		
   --add one bitmap per map size and set current map size
   map.bmp={}
